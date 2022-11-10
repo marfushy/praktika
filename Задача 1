@@ -1,0 +1,19 @@
+#include <iostream>
+#include <windows.h>
+#include <cmath>
+using namespace std;
+const double pi = 3.14159265;
+int main()
+{
+ SetConsoleCP(1251);
+ SetConsoleOutputCP(1251);
+ double s, square, per;
+ cout << "Площа описаного кола S: ";
+ cin >> s;
+ double r = sqrt(s / (4 * pi));
+ square = 4 * r * r;
+ per = 8 * r;
+ cout << "Площа квадрата: " << square << "\nПериметр квадрата: " << per << endl;
+ system("pause");
+ return 0;
+}
