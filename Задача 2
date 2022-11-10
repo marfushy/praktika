@@ -1,0 +1,18 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+setlocale(LC_ALL, "RUS");
+float x1 = 0, x2 = 0, x3 = 16, y1 = 16 - 1, y2 = -16, y3 = 16 + 1;
+float a, b, c, p, hc, wa;
+a = sqrt(pow((x2 - x1), 2) + pow((y2 - y1), 2));
+b = sqrt(pow((x3 - x2), 2) + pow((y3 - y2), 2));
+c = sqrt(pow((x3 - x1), 2) + pow((y3 - y1), 2));
+p = (a + b + c) / 2;
+hc = (2 / a)*(sqrt(p*(p - a)*(p - b)*(p - c)));
+wa = (2 * (a*b*p*(p - b))) / (a + b);
+cout << "Висота Hc = " << hc << endl;
+cout << "Бiсектриса Wa = " << wa << endl;
+system("pause");
+}
