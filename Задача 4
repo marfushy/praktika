@@ -1,0 +1,40 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+setlocale(LC_ALL, "RUS");
+int nomer;
+cout << "Номер товару \n";
+cin >> nomer;
+switch (nomer)
+{
+case (01):
+cout << "Вартiсть товару = 1 \n";
+cout << "Кiлькiсть товару = 10 \n";
+break;
+case (02):
+cout << "Вартiсть товару = 2 \n";
+cout << "Кiлькiсть товару = 11 \n";
+break;
+case (03):
+cout << "Вартiсть товару = 3 \n";
+cout << "Кiлькiсть товару = 12 \n";
+break;
+case (04):
+cout << "Вартiсть товару = 4 \n";
+cout << "Кiлькiсть товару = 13 \n";
+break;
+case (05):
+cout << "Вартiсть товару = 5 \n";
+cout << "Кiлькiсть товару = 14 \n";
+break;
+case (06):
+cout << "Вартiсть товару = 6 \n";
+cout << "Кiлькiсть товару = 15 \n";
+break;
+default:
+cout << "Введiть iншу вартiсть \n";
+}
+system("pause");
+}
