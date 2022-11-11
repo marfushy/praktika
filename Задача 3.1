@@ -1,0 +1,42 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+setlocale(LC_ALL, "RUS");
+char work;
+float y, x, n;
+cout << " Тип роботи (A\B\C)?" << endl;
+cin >> work;
+float i = 16;
+if (work = 'A')
+{
+y = 100 * abs(((6.3 * i) - (2 * sin(3 * i)) / (1.5 * ((3 * i) - 7))) + 50);
+x = (10 * y) / 100;
+n = y - x;
+cout << "Нараховано = " << y << endl << "Вiдсотки = " << x << endl << "Сума до видачi = " << n << endl;
+system("pause");
+}
+else
+{
+if (work = 'B')
+{
+y = 150 * abs((3.5 * tan(2 * i) + (pow(i, 3) - 4) / ((i - 1.2) * (i + 3.5))) + 100);
+x = (15 * y) / 100;
+n = y - x;
+cout << "Нараховано = " << y << endl << "Вiдсотки = " << x << endl << "Сума до видачi = " << n << endl;
+system("pause");
+}
+else
+{
+if (work = 'C')
+{
+y = 200 * abs(((3 * i - 1) * tan(5 * i)) / ((i + 2) * (3 * i - 8)) + sqrt(fabs(i - 3)) + 135);
+x = (20 * y) / 100;
+n = y - x;
+cout << "Нараховано = " << y << endl << "Вiдсотки = " << x << endl << "Сума до видачi = " << n << endl;
+system("pause");
+}
+}
+}
+}
