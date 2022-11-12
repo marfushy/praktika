@@ -1,0 +1,30 @@
+#include <math.h>
+#include <iostream>
+using namespace std;
+void main()
+{
+setlocale(LC_ALL, "Rus");
+int x = 0, k, o = 0;
+float y = 0, MaxMin = 0, TopDoh = 0, i = 16;
+int const N = 11;
+int year[N] = { 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001 };
+cout << "\t Рiк" << "\t Прибуток" << endl;
+cout << "\t______________________" << endl;
+for (o; o < 15; o++)	
+{
+k = year[o];
+y = 100 * ((((3.5 * k - 1) * sin(5 * k) / ((k + 2) * (2 * k - 7))) + 2 * pow(k, 3)));
+cout << "\t " << k << "\t " << y << endl;
+if (y > TopDoh) {
+TopDoh = y;
+x = k;
+}
+if (y < MaxMin) {
+MaxMin = y;
+}
+};
+cout << "\t______________________" << endl;
+cout << "\tРiк у якому був макс. прибуток: " << x << endl;
+cout << "\tМакс. збиток: " << MaxMin << endl;
+system("pause");
+}
