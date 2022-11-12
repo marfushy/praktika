@@ -29,7 +29,7 @@ void main()
 		srand(time(NULL));
 		x = rand() % 1000 + 1;
 		x /= 1000;
-		cout << "Случайный выбор х=" << x << endl;
+		cout << "х=" << x << endl;
 		k = 0;
 		long factk = 1;
 		b = 1;
