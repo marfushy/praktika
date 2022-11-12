@@ -1,0 +1,28 @@
+#include<iostream>
+#include<math.h>
+#include<cstdlib>
+#include<cmath>
+#include<conio.h>
+using namespace std;
+int main()
+{
+setlocale(LC_ALL, "RUS");
+double y = 0, h = 0.1, x = 0, a = 16, s = 0, f = 1;
+cout << "\t=========================" << endl;
+cout << "\t| x \t|" << " y\t|" << endl;
+for (int i = -16;i <= 16; i = i + h*a)
+{
+y = ((cos(2.1 * 1) * sin(i) / (0.15 - 5.8)) / (sin(3 * x)*(2 * x - 8)) + pow(2.7, -3 * x));
+x = i;
+cout << "\t|" << x << "\t|" << y << "\t|" << endl;
+if (x < 0)
+{
+f *= x;
+s++;
+}
+};
+cout << "\t=========================" << endl;
+	cout << "\tКiлькiсть усiх негативних значень у=" << s << endl;
+	cout << "\tДобуток усiх негативних значень у=" << f << endl;
+	system("pause");
+}
