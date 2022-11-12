@@ -1,0 +1,28 @@
+#include<iostream>
+#include<math.h>
+#include<locale.h>
+#include <iomanip>
+using namespace std;
+void main()
+{
+	setlocale(LC_ALL, "RUS");
+	double rod, step, lines, meter, fut;
+	cout << "Початкове значення мiри \nКрок змiни." << endl;
+	meter = 28.3;
+	fut = 1000;
+	cin >> rod;
+	cin >> step;
+	lines = 15;
+	cout << "--------------------------------------------------" << endl;
+	cout << "|Рiд |Куб.м |Куб.футiв |" << endl;
+	for (lines; lines > 0; lines--)
+	{
+		meter = 28.3 * rod;
+		fut = 1000 * rod;
+		cout << "--------------------------------------------------" << endl;
+		cout << "|" << setw(7) << left << rod << "|" << setw(18) << left << meter << "|" << setw(19) << left << fut << "|" << endl;
+		rod += step;
+	}
+	cout << "|--------------------------------------------------|" << endl;
+	system("pause");
+}
