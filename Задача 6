@@ -1,0 +1,23 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+void main()
+{
+	double i, y, x, z;
+	i = 16;
+	for (double i = 16; i <= 21; i++)
+	{
+		x = (3.5 * tan(2 * i)) + ((pow(i, 3) + 5) / ((cos(2.1 * i) * sin(i) / (0.15 - 5.8) * i + 6) * (i + 5)));
+		x += x;
+	}
+	for (double i = 16; i <= 21; i++)
+	{
+		y = (3 * i - 1) * tan(5 * i) / ((i + 2) * cos(2.1 * i) * sin(i) / (0.15 - 5.8) + sqrt(fabs(i + 6)));
+		y *= y;
+	}
+	z = y * x;
+	cout << "z=" << z << endl;
+	cout << "x=" << x << endl;
+	cout << "y=" << y << endl;
+	system("pause");
+}
